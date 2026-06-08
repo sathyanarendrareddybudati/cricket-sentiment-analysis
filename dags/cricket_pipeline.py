@@ -1,20 +1,3 @@
-"""
-cricket_sentiment_pipeline
---------------------------
-End-to-end daily pipeline (Airflow DAG):
-
-  ingest_cricbuzz  → format_cricbuzz ─┐
-                                       ├─→ combine → index_elastic
-  ingest_news      → format_news     ─┘
-
-Data Lake folder convention:
-  data/<layer>/<group>/<dataEntity>/<dateVersion>/
-  - raw/cricbuzz/matches/YYYY-MM-DD/
-  - raw/news/articles/YYYY-MM-DD/
-  - formatted/cricbuzz/matches/YYYY-MM-DD/
-  - formatted/news/sentiment/YYYY-MM-DD/
-  - usage/team_insights/YYYY-MM-DD/
-"""
 
 import sys, os
 from datetime import datetime, timedelta
