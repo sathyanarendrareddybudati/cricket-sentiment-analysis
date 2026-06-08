@@ -1,0 +1,16 @@
+# ── Core ──────────────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# ── Data processing ───────────────────────────────────────────────────────────
+pandas>=2.0.0
+pyarrow>=14.0.0          # parquet read/write
+textblob>=0.17.1         # sentiment analysis
+pyspark>=3.5.0           # Spark for data processing
+
+# ── Elasticsearch ─────────────────────────────────────────────────────────────
+elasticsearch>=8.0.0
+
+# ── Airflow (install separately via pip install apache-airflow) ───────────────
+# apache-airflow>=3.0.0
+# apache-airflow-providers-standard>=1.0.0
